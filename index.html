@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,68 +19,161 @@
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <div class="container">
+    <header>
+      <div id="title">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div id="darkmode">
+        <span>Dark mode</span>
+        <button></button>
+      </div>
+    </header>
 
-  Dark Mode
+    <div id="followersCards">
+      <div class="followersCard" id="fb">
+        <div class="rsx">
+          <img src="./images/icon-facebook.svg" alt="fb">
+          <span>@nathanf</span>
+        </div>
+        <div class="followers">
+          <h4>1987</h4>
+          <span>FOLLOWERS</span>
+        </div>
+        <span class="win">12 Today</span>
+      </div>
 
-  
+      <div class="followersCard" id="tw">
+        <div class="rsx">
+          <img src="./images/icon-twitter.svg" alt="tw">
+          <span>@nathanf</span>
+        </div>
+        <div class="followers">
+          <h4>1044</h4>
+          <span>FOLLOWERS</span>
+        </div>
+        <span class="win">99 Today</span>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="followersCard" id="in">
+        <div class="rsx">
+          <img src="./images/icon-instagram.svg" alt="in">
+          <span>@realnathanf</span>
+        </div>
+        <div class="followers">
+          <h4>11k</h4>
+          <span>FOLLOWERS</span>
+        </div>
+        <span class="win">1099 Today</span>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="followersCard" id="yt">
+        <div class="rsx">
+          <img src="./images/icon-youtube.svg" alt="yt">
+          <span>Nathan F.</span>
+        </div>
+        <div class="followers">
+          <h4>8239</h4>
+          <span>FOLLOWERS</span>
+        </div>
+        <span class="lose">144 Today</span>
+      </div>
+    </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <div id="overview">
+      <h2>Overview - Today</h2>
+      <div id="likeViewCards">
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Pages Views</h6>
+            <img src="./images/icon-facebook.svg" alt="fb">
+          </div>
+          <div class="bottomCard">
+            <p>87</p>
+            <span class="win">3%</span>
+          </div>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Likes</h6>
+            <img src="./images/icon-facebook.svg" alt="fb">
+          </div>
+          <div class="bottomCard">
+            <p>52</p>
+            <span class="lose">2%</span>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Pages Views</h6>
+            <img src="./images/icon-instagram.svg" alt="in">
+          </div>
+          <div class="bottomCard">
+            <p>5462</p>
+            <span class="win">2257%</span>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Profile Views</h6>
+            <img src="./images/icon-instagram.svg" alt="in">
+          </div>
+          <div class="bottomCard">
+            <p>52k</p>
+            <span class="win">1375%</span>
+          </div>
+        </div>
 
-  Overview - Today
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Retweets</h6>
+            <img src="./images/icon-twitter.svg" alt="tw">
+          </div>
+          <div class="bottomCard">
+            <p>117</p>
+            <span class="win">303%</span>
+          </div>
+        </div>
 
-  Page Views
-  87
-  3%
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Like</h6>
+            <img src="./images/icon-twitter.svg" alt="tw">
+          </div>
+          <div class="bottomCard">
+            <p>507</p>
+            <span class="win">553%</span>
+          </div>
+        </div>
 
-  Likes
-  52
-  2%
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Likes</h6>
+            <img src="./images/icon-youtube.svg" alt="yt">
+          </div>
+          <div class="bottomCard">
+            <p>107</p>
+            <span class="lose">19%</span>
+          </div>
+        </div>
 
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+        <div class="card">
+          <div class="topCard">
+            <h6 class="title">Total Views</h6>
+            <img src="./images/icon-youtube.svg" alt="yt">
+          </div>
+          <div class="bottomCard">
+            <p>1407</p>
+            <span class="lose">12%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

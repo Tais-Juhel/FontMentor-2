@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  position: relative;
+  background-color: white;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 100vh;
+  padding: 5vh 15vw;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header #title h1 {
+  font-size: 28px;
+  color: #1e202a;
+}
+
+.container header #title p {
+  font-size: 14px;
+  color: #63687e;
+}
+
+.container header #darkmode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header #darkmode span {
+  font-size: 14px;
+  color: #63687e;
+  margin-right: 10px;
+}
+
+.container header #darkmode button {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #aeb3cb;
+  outline: none;
+}
+
+.container header #darkmode button::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  top: 2.5px;
+  right: 2.5px;
+  border-radius: 8px;
+}
+
+.container header #darkmode button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(0.25turn, #378fe6, #3eda82);
+  cursor: pointer;
+}
+
+.container #followersCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vh 0;
+}
+
+.container #followersCards .followersCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: 200px;
+  background-color: #f5f7ff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.container #followersCards .followersCard .rsx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #63687e;
+}
+
+.container #followersCards .followersCard .rsx img {
+  margin-right: 10px;
+}
+
+.container #followersCards .followersCard .followers {
+  text-align: center;
+}
+
+.container #followersCards .followersCard .followers h4 {
+  font-size: 50px;
+  color: #1e202a;
+}
+
+.container #followersCards .followersCard .followers span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #63687e;
+}
+
+.container #followersCards .followersCard .win, .container #followersCards .followersCard .lose {
+  position: relative;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.container #followersCards .followersCard .win {
+  color: #1db489;
+}
+
+.container #followersCards .followersCard .win::before {
+  position: absolute;
+  content: url(../images/icon-up.svg);
+  left: -2px;
+  bottom: 2px;
+}
+
+.container #followersCards .followersCard .lose {
+  color: #dc414c;
+}
+
+.container #followersCards .followersCard .lose::before {
+  position: absolute;
+  content: url(../images/icon-down.svg);
+  left: -2px;
+  bottom: 2px;
+}
+
+.container #followersCards .followersCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 3px;
+}
+
+.container #followersCards #fb::before {
+  background-color: #198ff5;
+}
+
+.container #followersCards #tw::before {
+  background-color: #1ca0f2;
+}
+
+.container #followersCards #in::before {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(0.25turn, #fdc468, #df4996);
+}
+
+.container #followersCards #yt::before {
+  background-color: #c4032a;
+}
+
+.container #overview h2 {
+  font-size: 24px;
+  color: #63687e;
+}
+
+.container #overview #likeViewCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container #overview #likeViewCards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3vh;
+  width: 230px;
+  height: 100px;
+  background-color: #f5f7ff;
+  border-radius: 7px;
+}
+
+.container #overview #likeViewCards .card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  width: 190px;
+}
+
+.container #overview #likeViewCards .card .topCard {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container #overview #likeViewCards .card .topCard h6 {
+  font-size: 14px;
+  color: #63687e;
+}
+
+.container #overview #likeViewCards .card .bottomCard {
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container #overview #likeViewCards .card .bottomCard p {
+  font-size: 24px;
+}
+
+.container #overview #likeViewCards .card .bottomCard .win, .container #overview #likeViewCards .card .bottomCard .lose {
+  position: relative;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.container #overview #likeViewCards .card .bottomCard .win {
+  color: #1db489;
+}
+
+.container #overview #likeViewCards .card .bottomCard .win::before {
+  position: absolute;
+  content: url(../images/icon-up.svg);
+  left: -2px;
+  bottom: 2px;
+}
+
+.container #overview #likeViewCards .card .bottomCard .lose {
+  color: #dc414c;
+}
+
+.container #overview #likeViewCards .card .bottomCard .lose::before {
+  position: absolute;
+  content: url(../images/icon-down.svg);
+  left: -2px;
+  bottom: 2px;
+}
+/*# sourceMappingURL=index.css.map */
